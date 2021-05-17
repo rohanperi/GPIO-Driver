@@ -26,21 +26,21 @@ void config_pin (GPIO_TypeDef *port, uint32_t pinNumber, uint32_t mode_type)
 {
 	switch(mode_type)
 	{
-		case INPUT:
+		case GPIO_INPUT:
 			port->MODER &= ~(1<<(PINPOS[pinNumber]) | 1<<(PINPOS[pinNumber] + 1));
 		break;
 		
-		case OUTPUT_GEN_PURPOSE:
+		case GPIO_OUTPUT_GEN_PURPOSE:
 			port->MODER &= ~( 1<< (PINPOS[pinNumber]+1) );
 			port->MODER |=  (1<<PINPOS[pinNumber]);
 		break;
 		
-		case ALT_FUNCTION_MODE:
-			port->MODER |= ALT_FUNCTION_MODE<<(PINPOS[pinNumber]);
+		case GPIO_ALT_FUNCTION_MODE:
+			port->MODER |= GPIO_ALT_FUNCTION_MODE<<(PINPOS[pinNumber]);
 		break;
 		
-		case ANALOG_MODE:
-			port->MODER |= ANALOG_MODE<<(PINPOS[pinNumber]);
+		case GPIO_ANALOG_MODE:
+			port->MODER |= GPIO_ANALOG_MODE<<(PINPOS[pinNumber]);
 		break;
 	}
 }

@@ -18,7 +18,7 @@ int main()
 	//Initialize port, pin and type 
 	LED1.port = PORTB;
 	LED1.pin = 0;
-	LED1.mode_type = OUTPUT_GEN_PURPOSE;	
+	LED1.mode_type = GPIO_OUTPUT_GEN_PURPOSE;	
 
 	//call the initialize function to set the clock and configure our pin
 	gpio_init(LED1);

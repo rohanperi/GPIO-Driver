@@ -16,10 +16,10 @@
 #define PORTG		GPIOG
 #define PORTH		GPIOH
 
-#define INPUT ((uint32_t) 0x00)
-#define OUTPUT_GEN_PURPOSE ((uint32_t) 0x01)
-#define ALT_FUNCTION_MODE ((uint32_t) 0x02)
-#define ANALOG_MODE ((uint32_t) 0x03)
+#define GPIO_INPUT ((uint32_t) 0x00)
+#define GPIO_OUTPUT_GEN_PURPOSE ((uint32_t) 0x01)
+#define GPIO_ALT_FUNCTION_MODE ((uint32_t) 0x02)
+#define GPIO_ANALOG_MODE ((uint32_t) 0x03)
 
 #define GPIO_CLOCK_ENABLE_PORTA		(RCC->AHB1ENR |= (1<<0))
 #define GPIO_CLOCK_ENABLE_PORTB		(RCC->AHB1ENR |= (1<<1))
