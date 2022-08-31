@@ -4,7 +4,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rohanperi/GPIO-Driver)
 ![GitHub issues](https://img.shields.io/github/issues-raw/rohanperi/GPIO-Driver)
 
-A series of LEDs that tell you how warm your room is - Made with an STM32F7, TMP102 sensor, I2C, and FreeRTOS
+A driver to interact with general-purpose input-output pins on an STM32F767
 
 # Installation
  
