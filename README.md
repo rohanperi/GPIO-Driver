@@ -17,7 +17,7 @@ A driver to interact with general-purpose input-output pins on an STM32F767
 
 Once the code is run, the on-board LED should be blinking! Feel free to edit the code and use this driver for any other GPIO of choice!
 
-Parts:
+# Parts
 
 MCU: https://www.st.com/en/microcontrollers-microprocessors/stm32f767zi.html 
 
